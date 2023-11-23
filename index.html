@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/base.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=open+sans">
     <title>CHRIS NICDAO</title>
 </head>
 <body>
-    <header>
-        <h1>Chris Nicdao</h1>
-        <nav> 
-            <ul>
-                <li><a href="Work">Work</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!--HEADER--> 
+<header class="header mf1-position-relative js-header ">
+  <div class="header__container mf1-container mf1-max-width-lg">
+    <div class="header__logo">
+      <a href="Home">
+        <svg width="104" height="30" viewBox="0 0 104 30"><title>Go to homepage</title><path d="M37.54 24.08V3.72h4.92v16.37h8.47v4zM60.47 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8 8 0 015.64-2.18 8.07 8.07 0 015.68 2.2 8.49 8.49 0 012 5.69 8.63 8.63 0 01-1.78 5.38 7.6 7.6 0 01-5.89 2.49zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.79 3-2.79 4.26.32 4.23 2.82 4.23zM95.49 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8.4 8.4 0 0111.31 0 8.43 8.43 0 012 5.69 8.6 8.6 0 01-1.77 5.38 7.6 7.6 0 01-5.89 2.51zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.8 3-2.8 4.26.31 4.23 2.83 4.23zM77.66 30c-5.74 0-7-3.25-7.23-4.52l4.6-.26c.41.91 1.17 1.41 2.76 1.41a2.45 2.45 0 002.82-2.53v-2.68a7 7 0 01-1.7 1.75 6.12 6.12 0 01-5.85-.08c-2.41-1.37-3-4.25-3-6.66 0-.89.12-3.67 1.45-5.42a5.67 5.67 0 014.64-2.4c1.2 0 3 .25 4.46 2.82V8.81h4.85v15.33a5.2 5.2 0 01-2.12 4.32A9.92 9.92 0 0177.66 30zm.15-9.66c2.53 0 2.81-2.69 2.81-3.91s-.31-4-2.81-4-2.81 2.8-2.81 4 .27 3.91 2.81 3.91zM55.56 3.72h9.81v2.41h-9.81z" fill="hsl(var(--mf1-color-contrast-higher-hsl))"/><circle cx="15" cy="15" r="15" fill="hsl(var(--mf1-color-primary-hsl))"/></svg>
+      </a>
+    </div>
+
+    <button class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+      <i class="header__trigger-icon" aria-hidden="true"></i>
+      <span>Menu</span>
+    </button>
+
+    <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+      <div class="header__nav-inner">
+        <div class="header__label">Main Menu</div>
+        <ul class="header__list">
+          <li class="header__item"><a href="#bout" class="header__link">About</a></li>
+          <li class="header__item"><a href="Work" class="header__link">Work</a></li>
+          <li class="header__item header__item--divider" aria-hidden="true"></li>
+          <li class="header__item"><a href="#0" class="header__nav-btn mf1-btn mf1-btn--primary">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--HERO--> 
+<section class="hero hero--center hero--full-screen" style="background-image: url('https://d3ae4wrz2ljkbq.cloudfron')">
+    <div class="cd-container cd-max-width-adaptive-sm">
+      <div class="hero__label cd-margin-bottom-2xs">Chris Nicdao</div>
+      <h1 class="cd-margin-bottom-xs">Hey! I'm Chris &#128075</h1>
+      <p class="cd-line-height-lg cd-margin-bottom-sm">Meet Chris, an experienced user-experience designer. Work includes clients such as the City of Calgary, Neo Financial, Calgary Downtown Association.</p>
+      <div class="hero__cta">
+        <a href="Work" class="cd-btn cd-btn--primary">View Work</a>
+        <a href="" class="cd-link cd-link--contrast-higher">Contact Info</a>
+      </div>
+    </div>
+  </section>
+  
 <main>
     <article>
-        <h1>Hey! I'm Chris &#128075;</h1>
-        <section id="About">
-            <h2>About &#9998;</h2>
-            <p>Hi there! I’m Chris. I was born in Vancouver, BC but I definitely consider my self a Calgarian. 
-                I completed my Bachelor of Business Administration in Marketing at the Southern Alberta Instiute of Technology in 2022. However, I have 
-                recently returned to school to pursue User Experience Design. Currently, I work with the City of Calgary and the Calgary Downtown Association as a Marketing Consultant. 
-                Outside of the workspace, you can find me teaching at hip hop studios, or hiking in the mountains!</p>
-                
-                Chat with me about:
-                <p></p>
-                <table border="7">
+        <section id="Experience">
+            <h1>Experience In</h1>
+                <table border="8">
                     <tr>
                         <td>User Experience</td>
                         <td>Marketing</td>
@@ -40,35 +64,75 @@
                         <td>Social Media Content Creation</td>
                     </tr>
                 </table>
-                  
         </section>
-       <section id="Work">
-            <h2>Work &#127912;</h2>
-            <p>A small collection of the work and clients I have worked with in the past</p>
-            <ol type="1">
-                <li>City of Calgary</li>
-                <li>Neo Financial</li>
-                <li>Calgary Downtown Association</li>
-                <li>Tuft Grove </li>
-            </ol>
-                <figure>
-                    <img src="./Images/Tuft Grove Poster.png" height="400" alt="Vintage Poster of the Business Name Tuft Grove"/>
-                </figure>
-       </section>
-       <section id="Contact">
-            <h3>Contact</h3>
-            <ul>
-            <li><a href="https://www.linkedin.com/in/chrisdnicdao/">Visit my LinkedIn Profile</a></li>
-            <li><a href="https://www.instagram.com/nvcdao/">Visit my Instagram</a></li>
-            <ul>
-            <figure>
-                <img src="./Images/CN Logo.png" height="100" alt="Monogram CN"/>
-            </figure>
-       </section>
+          <!--Services-->
+        </section>
+          <div id="about" class="about">
+            <h2>About Me</h2>
+            <div class="skills">
+                <div class="card">
+                   <p>
+                        Hi there! I’m Chris. I was born in Vancouver, BC but I definitely consider my self a Calgarian. 
+                        I completed my Bachelor of Business Administration in Marketing at the Southern Alberta Instiute of Technology in 2022. However, I have 
+                        recently returned to school to pursue User Experience Design. Currently, I work with the City of Calgary and the Calgary Downtown Association as a Marketing Consultant. 
+                        Outside of the workspace, you can find me teaching at hip hop studios, or hiking in the mountains!
+                      </p>       
+            </div>
+          </section>
+           <!--Work-->
+      <section>
+        <div id="Work" class="work">
+          <h2>Work &#127912;</h2>
+          <div class="skill">
+            <div class ="cards">
+              <p>A small collection of the work and clients I have worked with in the past</p>
+              <ol type="1">
+                  <li>City of Calgary</li>
+                  <li>Neo Financial</li>
+                  <li>Calgary Downtown Association</li>
+                  <li>Tuft Grove </li>
+              </ol>
+              <p></p>
+                  <figure>
+                      <img src="./Images/Tuft Grove Poster.png" height="400" alt="Vintage Poster of the Business Name Tuft Grove"/>
+                  </figure>
+         </div>
+      </section>
     <article>
 </main>
-<footer>
-    &copy; CHRIS NICDAO 2023. ALL RIGHTS RESERVED
+<!--FOOTER--> 
+<footer class="main-footer me6-position-relative me6-z-index-1 me6-padding-top-xl">
+  <div class="me6-container me6-max-width-lg">
+    <div class="me6-grid me6-gap-y-lg me6-gap-lg@lg">
+      <div class="me6-col-3@lg me6-order-2@lg me6-text-right@lg">
+        <a class="main-footer__logo" href="#0">
+        </a>
+      </div>
+      
+      <nav class="me6-col-9@lg me6-order-1@lg">
+        <ul class="me6-grid me6-gap-y-lg me6-gap-lg@xs">
+          <li class="me6-col-6@xs me6-col-3@md">
+            <h3 class="me6-margin-bottom-sm me6-text-base@md">Contact</h3>
+            <ul class="me6-grid me6-gap-xs me6-text-sm@md">
+              <li><a href="https://www.linkedin.com/in/chrisdnicdao/" class="main-footer__link">LinkedIn Profile</a></li>
+              <li><a href="https://www.instagram.com/nvcdao/" class="main-footer__link">Instagram </a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="me6-flex me6-flex-column me6-border-top me6-padding-y-xs me6-margin-top-lg me6-flex-row@md me6-justify-between@md me6-items-center@md">
+      <div class="me6-margin-bottom-sm me6-margin-bottom-0@md">
+        <div class="me6-text-sm me6-text-xs@md me6-color-contrast-medium me6-flex me6-flex-wrap me6-gap-xs">
+          <span>&copy; Chris Nicdao 2023</span>
+
+      <div class="me6-flex me6-items-center me6-gap-xs">
+        <a href="#0" class="main-footer__social">
+          <svg class="me6-icon me6-block" viewBox="0 0 16 16"><title>Follow us on Github</title><g><path  d="M8,0.2c-4.4,0-8,3.6-8,8c0,3.5,2.3,6.5,5.5,7.6 C5.9,15.9,6,15.6,6,15.4c0-0.2,0-0.7,0-1.4C3.8,14.5,3.3,13,3.3,13c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5 c0.8,0.1,1.2,0.8,1.2,0.8C4.4,13.4,5.6,13,6,12.8c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.6-0.9-3.6-4c0-0.9,0.3-1.6,0.8-2.1 c-0.1-0.2-0.4-1,0.1-2.1c0,0,0.7-0.2,2.2,0.8c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.4,0.1,2,0.3c1.5-1,2.2-0.8,2.2-0.8 c0.4,1.1,0.2,1.9,0.1,2.1c0.5,0.6,0.8,1.3,0.8,2.1c0,3.1-1.9,3.7-3.7,3.9C9.7,12,10,12.5,10,13.2c0,1.1,0,1.9,0,2.2 c0,0.2,0.1,0.5,0.6,0.4c3.2-1.1,5.5-4.1,5.5-7.6C16,3.8,12.4,0.2,8,0.2z"></path></g></svg>
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
