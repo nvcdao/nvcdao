@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans:wght@400;700&display=swap">
 </head>
 <body>
+    <script async src="nvcdao/java.js"></script>
     <header>
         <h1>CHRIS NICDAO</h1>
         <nav> 
@@ -26,7 +27,13 @@
             <p> Hi there! I’m Chris. I was born in Vancouver, BC but I definitely consider myself a Calgarian. 
                 I completed my Bachelor of Business Administration in Marketing at the Southern Alberta Institute of Technology in 2022. However, I have 
                 recently returned to school to pursue User Experience Design. Currently, I work with the City of Calgary and the Calgary Downtown Association as a Marketing Consultant. 
-                Outside of the workspace, you can find me teaching at hip hop studios, or hiking in the mountains!</p>
+                Outside of the workspace, you can find me teaching at hip hop studios, or hiking in the mountains!</p><p></p>
+                <!--button with the ID-->
+                <button id="btn-alert">Hover to Reveal!</button>
+                <!--button with the ID-->
+                <button id="btn-counter">Increment Counter</button>
+                <!--ID "txt-counter" and initial text "Number: 1" -->
+                <p id="txt-counter" class="odd" >Number: 1</p>
                 <p>Chat with me about:</p>
                 <table border="7">
                   <tr>
@@ -46,7 +53,6 @@
                   <h2>Education</h2>
                   <p>BBA - Marketing </p>
                   <p>Interactive Design (UX) - Diploma </p>
-
                 </div>
         </div>
         <div class="headshot">
@@ -89,6 +95,12 @@
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.calgary.ca/for-business/support/digital-service-squad.html'">City of Calgary</button>
         </div>
     </div>
+<section id="other">
+<p class="section__text__p1">Other projects for Web Design Class</p>
+<h1 class="title">Intro to Web &#127912;</h1>
+    <!--numbers!!-->
+<ol id="numbers"></ol>
+</section>
 </div>
 </div>
 </section>
@@ -100,7 +112,7 @@
             <ul>
 </main>
 <footer>
-    &copy; CHRIS NICDAO 2023. ALL RIGHTS RESERVED
+    <p>&copy; <span id="currentYear"></span> Chris Nicdao </p>
 </footer>
 </body>
 </html>

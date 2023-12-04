@@ -47,6 +47,41 @@ nav a {
   font-weight:bold; 
 }
 
+/* BUTTONS related to the Java */
+
+#btn-alert, #btn-counter {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the text inside the button */
+  font-size: 16px; /* Font size */
+  margin-right: 20px;
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#btn-alert:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+#btn-counter:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+
+/* The EVEN/ODD button counter */
+
+/* Styling for odd numbers */
+.odd {
+  color: red;
+}
+
+/* Styling for even numbers */
+.even {
+  color: green;
+}
+
 /* The Super Hero  */
 
 article.hero {
@@ -108,7 +143,6 @@ article.hero .headshot {
 .experience-details-container {
   display: flex;
   justify-content: space-around;
-  flex-direction;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 1rem;
@@ -150,6 +184,21 @@ article.hero .headshot {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+}
+
+/* OTHER SECTION */
+
+#other {
+display: flex;
+text-align: left;
+flex-wrap: wrap;
+  flex: 1 1 100%;
+
+}
+
+/* Ensure the #other section takes full width and stays on its own line */
+#other > * {
+  flex: 1 1 100%;
 }
 
 /* BUTTONS */
@@ -243,6 +292,12 @@ article.hero .headshot {
 #Contact figure {
   display: inline;
   vertical-align: middle;
+}
+
+/* NUMBERED LIST */
+
+#other {
+padding: 50px;
 }
 
 /* THE FOOOOOOOTER */
