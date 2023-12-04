@@ -15,7 +15,7 @@ header {
   background-color: #ebebeb; 
   color: rgb(20, 17, 17); 
   padding: 20px; 
-  display: flex; 
+  display: flex;
   justify-content: space-between; 
   position: fixed;
   width: 100%;
@@ -50,34 +50,32 @@ nav a {
 /* BUTTONS related to the Java */
 
 #btn-alert, #btn-counter {
-  background-color: #007bff; /* Button background color */
-  color: #fff; /* Text color */
-  padding: 10px 20px; /* Padding around the text inside the button */
-  font-size: 16px; /* Font size */
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 16px; 
   margin-right: 20px;
-  border: none; /* Remove button border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Add pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
 #btn-alert:hover {
-  background-color: #0056b3; /* Change background color on hover */
+  background-color: #0056b3; 
 }
 
 #btn-counter:hover {
-  background-color: #0056b3; /* Change background color on hover */
+  background-color: #0056b3; 
 }
 
 
 /* The EVEN/ODD button counter */
 
-/* Styling for odd numbers */
 .odd {
   color: red;
 }
 
-/* Styling for even numbers */
 .even {
   color: green;
 }
@@ -91,13 +89,14 @@ article.hero {
   color: #333; 
   height: 100vh; 
   display: flex; 
-  justify-content: space-between; 
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 article.hero .content {
   display: flex;
   width: 100%;
+  padding-top: 70px;
 }
 
 article.hero .text {
@@ -111,9 +110,23 @@ margin-top: 20px;
 
 /* The Super Hero Headshot  */
 
+
 article.hero .headshot {
   flex-shrink: 0;
   padding-right: 3%;
+  padding-top: 50px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  article.hero .content {
+    align-items: center;
+  }
+
+  article.hero .headshot {
+    display: none; /* Hide the image on smaller screens */
+  }
 }
 
 /* WORK + CONTAINER SECTION */
